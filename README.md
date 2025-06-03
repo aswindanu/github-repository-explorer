@@ -16,9 +16,11 @@ Please do these steps to run the code :
 
 3. Update `.env` especially for `REACT_APP_TOKEN` variable
 
-4. Type `npm start` to run the project
+4. Type `npm i` for installing dependencies
 
-5. Open [http://localhost:3000](http://localhost:3000)
+5. Type `npm start` to run the project
+
+6. Open [http://localhost:3000](http://localhost:3000)
 
 ## Available Scripts
 
