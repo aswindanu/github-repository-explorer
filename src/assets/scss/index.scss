@@ -1,0 +1,62 @@
+$primary-color: #edeff1;
+$header-color: #a8abb2;
+$footer-color: #282c34;
+$main-color: #8ddff6;
+$bg-white: #ffffff;
+$bg-grey: #edeff1;
+$bg-dark-grey: #d5d7da;
+
+body {
+  margin: 0;
+  // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  //   "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  //   sans-serif;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-image: linear-gradient($header-color, $primary-color);
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 100;
+  background-color: $footer-color;
+  padding: 10px;
+  p {
+    margin: 0;
+  }
+}
+
+.bg-grey {
+  background-color: $bg-grey;
+}
+
+.bg-dark-grey {
+  background-color: $bg-dark-grey;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.primary-button {
+  background-color: #4bb2ff;
+  border: none;
+  color: $bg-grey;
+}

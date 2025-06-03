@@ -1,0 +1,105 @@
+@use "index" as main;
+
+.App {
+  text-align: center;
+  background-color: main.$primary-color;
+}
+
+.App-logo {
+  height: 6vmin;
+  pointer-events: none;
+  margin: 10px 0px;
+}
+
+.table-search {
+  background-color: main.$bg-white;
+  justify-self: anchor-center;
+  width: 50%;
+  min-height: 280px;
+  position: absolute;
+  margin-top: 5%;
+  padding: 20px 30px;
+  outline: main.$bg-white solid 1px;
+  border-radius: 5px;
+  overflow: scroll;
+  max-height: 600px;
+  .table-input {
+    display: inline-grid;
+    gap: 12px;
+    width: 100%;
+    input {
+      background-color: main.$bg-grey;
+      outline: main.$bg-dark-grey solid 1px;
+      border: none;
+      height: 40px;
+      border-radius: 3px;
+      padding: 10px;
+    }
+    @media screen and (max-width: 425px) {
+      input,
+      button {
+        max-width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 425px) {
+    max-height: 550px;
+    min-width: 315px;
+    padding: 20px 35px;
+  }
+}
+
+.dropdown-search {
+  overflow: scroll;
+  max-height: 400px;
+  margin: 10px 0px;
+  .title {
+    text-align: left;
+    padding: 2px 0 2px 10%;
+    display: flex;
+    border-radius: 5px;
+    label {
+      width: 90%;
+      padding: 5px 0px;
+    }
+  }
+  .octicon-chevron-down,
+  .octicon-chevron-up {
+    margin-top: 6px;
+  }
+}
+
+.card-search {
+  padding-left: 15px;
+  .card-wrapper {
+    margin: 5px 0px;
+    border-radius: 5px;
+    outline: main.$bg-dark-grey solid 1px;
+  }
+  .card-name {
+    padding-top: 10px;
+  }
+  .card-rating {
+    justify-content: end;
+    padding-top: 8px;
+    gap: 8px;
+    .octicon-star-fill {
+      margin-top: 4px;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
